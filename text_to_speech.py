@@ -1,13 +1,16 @@
 from streamlit import *
-import pyttsx3
+from gtts import gTTS
 
-en=pyttsx3.init()
+
+
+
 
 write("Welcome in text to speech app")
 
 t=text_input("Enter your text")
 
 if button("genrate"):
-    en.say(t)
+   gTTS(t)
 
-    en.runAndWait()
+
+    
